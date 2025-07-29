@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home';
@@ -10,7 +8,6 @@ import NotFound from './pages/404/NotFound';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 function App() {
-
   return (
     <>
         <Header/>
@@ -25,5 +22,4 @@ function App() {
     </>
   )
 }
-
 export default App

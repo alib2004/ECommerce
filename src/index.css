@@ -1,25 +1,63 @@
 @import "tailwindcss";
+@theme {
+  --color-sefid: #fafafa;
+  /* پس زمینه سایت */
+  --color-zoghal: #1a1a1a;
+  /* متن‌ها، تیتر اصلی */
+  --color-khakestar-100: #efefef;
+  /* سکشن‌های جداکننده، باکس‌ها */
+  --color-khakestar-200: #c4c4c4;
+  /* بوردر، متن‌های فرعی، فرم‌ها */
+  --color-khakestar-300: #3b3b3b;
+  /* زیرتیتر، متن hover و جزئیات	 */
+  --color-tala: #bfa166;
+  /* دکمه‌ها، لینک‌های خاص، CTA */
+}
 @font-face {
-  font-family: 'Vazir';
-  src: url('./assets/fonts/Vazir.woff2') format('woff2');
+  font-family: "Vazir";
+  src: url("./assets/fonts/Vazir.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-:root {
-  font-family: 'Vazir', Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body,*{
+  background-color: #FAFAFA;
+  font-family: 'Vazir';
 }
-
+#root{
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.cont{
+    width: 100%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 64rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 80rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 96rem /* 1536px */;
+    }
+}
+.cont,
+.cont-fluid,
+.cont-xxl,
+.cont-xl,
+.cont-lg,
+.cont-md,
+.cont-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 a {
   font-weight: 500;
   color: #86e20d;
@@ -28,15 +66,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
