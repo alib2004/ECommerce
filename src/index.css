@@ -23,12 +23,10 @@ body{
   background-color: #FAFAFA;
   font-family: 'Vazir';
 }
-#root{
-  max-width: 1360px;
-  margin: 0 auto;
-}
+
 .cont{
     width: 100%;
+    max-width: 1360px;
     @media (width >= 40rem /* 640px */) {
         max-width: 40rem /* 640px */;
     }
@@ -38,12 +36,10 @@ body{
     @media (width >= 64rem /* 1024px */) {
         max-width: 64rem /* 1024px */;
     }
-    @media (width >= 80rem /* 1280px */) {
-        max-width: 80rem /* 1280px */;
+    @media (width >= 1360px /* 1280px */) {
+        max-width: 1360px /* 1280px */;
     }
-    @media (width >= 96rem /* 1536px */) {
-        max-width: 96rem /* 1536px */;
-    }
+
 }
 .cont,
 .cont-fluid,
@@ -55,16 +51,17 @@ body{
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 a {
   font-weight: 500;
-  color: #86e20d;
+  color: var(--color-zoghal);
   text-decoration: inherit;
+  transition: all 0.3s;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--color-tala);
 }
 h1 {
   font-size: 3.2em;
