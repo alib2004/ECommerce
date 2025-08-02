@@ -17,8 +17,9 @@ const Footer = () => {
     { title: "درباره ما", to: "" },
   ];
   return (
-    <div className="cont">
-      <div className="flex flex-col gap-7">
+    <div className="bg-khakestar-100 my-10">
+      <div className="cont">
+      <div className="flex flex-col gap-7 py-10">
         {/* Back to top and contact info */}
         <div className="flex flex-col items-center gap-4 md:flex-row-reverse md:justify-between">
           <a
@@ -95,6 +96,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
+    </div>
     </div>
   );
 };
