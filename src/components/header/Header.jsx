@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-khakestar-100 sticky top-0 left-0 right-0 z-30" id="top">
+      <header className="bg-khakestar-100 sticky top-0 left-0 right-0 z-50" id="top">
         {/* دسکتاپ */}
         <div className="hidden md:block cont !py-3">
           <div className="flex justify-between items-center">

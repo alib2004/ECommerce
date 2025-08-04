@@ -2,11 +2,21 @@ import React from "react";
 import gif1 from "../../assets/imgs/v1.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { productData } from "../../products";
+import ProductTitleSection from "../../components/home/ProductTitleSection";
+import ProductsSlider from "../../components/home/ProductsSlider";
+import Product from "../../components/home/Product";
+import SaleProduct from "../../components/home/SaleProduct";
+
 const Home = () => {
+  const newProduct = productData
+    .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate))
+    .slice(0, 8);
+  const saleProduct = productData.filter((prod) => prod.discountedPrice);
   return (
     <div className="cont lg:!my-10">
       <img src={gif1} className="rounded-lg hidden md:block" />
-      <div className="flex flex-col lg:flex-row gap-5 items-center ">
+      <div className="mb-10 lg:mb-0 flex flex-col lg:flex-row gap-5 items-center ">
         <div className="lg:w-[70%] w-full mx-auto mt-10 lg:h-[500px]">
           <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
             <SwiperSlide>
@@ -43,6 +53,10 @@ const Home = () => {
           />
         </div>
       </div>
+      <ProductTitleSection title={"پیشنهادات ویژه"} />
+      <ProductsSlider products={saleProduct} comp={SaleProduct} />
+      <ProductTitleSection title={"جدیدترین محصولات"} />
+      <ProductsSlider products={newProduct} comp={Product} />
     </div>
   );
 };
