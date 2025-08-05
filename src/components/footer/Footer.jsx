@@ -17,9 +17,9 @@ const Footer = () => {
     { title: "درباره ما", to: "" },
   ];
   return (
-    <div className="bg-khakestar-100 my-10">
+    <div className="bg-khakestar-100 mt-10">
       <div className="cont">
-      <div className="flex flex-col gap-7 py-10">
+      <div className="flex flex-col gap-7 py-5">
         {/* Back to top and contact info */}
         <div className="flex flex-col items-center gap-4 md:flex-row-reverse md:justify-between">
           <a
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Email subscription and social icons */}
-        <div className="flex flex-col gap-8 bg-khakestar-100 rounded-lg items-center px-10 py-7 lg:flex-row lg:justify-between">
+        <div className="flex flex-col gap-8 bg-khakestar-100 rounded-lg items-center  lg:flex-row lg:justify-between">
           <span className="text-gray-500 font-light">
             از جدیدترین تخفیف ها با خبر شوید
           </span>
