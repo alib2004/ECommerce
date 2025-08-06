@@ -57,11 +57,11 @@ const Header = () => {
           </div>
           <nav className="flex mt-8">
             <ul className="flex gap-5 text-xl text-khakestar-300">
-              <Link to="">فروشگاه</Link>
+              <Link to="/shop">فروشگاه</Link>
               <span className="w-[2px] h-full bg-tala"></span>
-              <Link to="">خانه</Link>
-              <Link to="">درباره ما</Link>
-              <Link to="">تماس با ما</Link>
+              <Link to="/">خانه</Link>
+              <Link to="/about-us">درباره ما</Link>
+              <Link to="/contact-us">تماس با ما</Link>
             </ul>
           </nav>
         </div>
