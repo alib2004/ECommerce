@@ -1,10 +1,9 @@
-import React from 'react';
-
+import { Link } from "react-router-dom";
 const SaleProduct = ({product}) => {
     return (
         <div className="card border border-tala rounded-md   p-5 flex flex-col gap-4">
-      <img src="/src/assets/imgs/1.png" className="" />
-      <span className="font-bold text-sm truncate">{product.name}</span>
+      <img src="/src/assets/imgs/1.png"/>
+      <Link to={`/product/${product.slug}`} className="!font-bold text-sm truncate">{product.name}</Link>
       <div className="w-full h-[1px] bg-tala"></div>
       <div className="flex justify-between items-start">
         <span className='bg-red-400 px-1 py-0.5 rounded-md text-white text-sm'>{Math.floor((product.price - product.discountedPrice) / product.price * 100)}%</span>

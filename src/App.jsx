@@ -7,6 +7,7 @@ import Shop from './pages/shop/Shop';
 import NotFound from './pages/404/NotFound';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import Product from './pages/Product/Product';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
           <Route path='/about-us' element={<About/>}/>
           <Route path='/contact-us' element={<Contact/>}/>
           <Route path='/shop' element={<Shop/>}/>
+          <Route path='/product/:slug' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer/>
