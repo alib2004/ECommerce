@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { productData } from "../../products";
+import { Link } from "react-router-dom";
 const colorMap = {
   خاکستری: "#888888",
   طلایی: "#FFD700",
@@ -145,29 +146,36 @@ const Shop = () => {
                         <span
                           key={i}
                           className="w-3 h-3 rounded-full border-0"
-                          style={{ backgroundColor: colorMap[color] || "#ccc" ,border:"1px solid"}}
+                          style={{
+                            backgroundColor: colorMap[color] || "#ccc",
+                            border: "1px solid",
+                          }}
                           title={color}
                         ></span>
                       ))}
                     </div>
                     <h3 className="font-bold mt-5 text-lg mb-2 truncate">
-                      {product.name}
+                      <Link to={`/product/${product.slug}`}>
+                        {product.name}
+                      </Link>
                     </h3>
-                    {product.discountedPrice ? 
-                                        <div className="flex flex-col gap-2 items-end font-bold">
-                      <p className="relative before:absolute before:top-1/2  before:right-0 before:bg-tala before:w-full before:h-0.5 before:-rotate-12">
+                    {product.discountedPrice ? (
+                      <div className="flex flex-col gap-2 items-end font-bold">
+                        <p className="relative before:absolute before:top-1/2  before:right-0 before:bg-tala before:w-full before:h-0.5 before:-rotate-12">
+                          {Number(product.price).toLocaleString()}{" "}
+                          <span className="text-tala">تومن</span>
+                        </p>
+                        <p>
+                          {Number(product.discountedPrice).toLocaleString()}{" "}
+                          <span className="text-tala">تومن</span>
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="font-bold flex gap-2 justify-end">
                         {Number(product.price).toLocaleString()}{" "}
                         <span className="text-tala">تومن</span>
                       </p>
-                      <p>
-                        {Number(product.discountedPrice).toLocaleString()}{" "}
-                        <span className="text-tala">تومن</span>
-                      </p>
-                    </div> : <p className="font-bold flex gap-2 justify-end">
-                        {Number(product.price).toLocaleString()}{" "}
-                        <span className="text-tala">تومن</span>
-                      </p>
-                    }
+                    )}
                   </div>
                 ))
               ) : (

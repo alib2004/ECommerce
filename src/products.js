@@ -7,7 +7,14 @@ export const productData = [
     colors: ["خاکستری", "طلایی", "نقره‌ای"],
     releaseDate: "2025-08-01",
     price: 95000000,
-    discountedPrice: 89900000
+    discountedPrice: 89900000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "سامسونگ گلکسی S25 Ultra 512 گیگ",
@@ -16,7 +23,14 @@ export const productData = [
     category: "پرچمدار",
     colors: ["مشکی", "نقره‌ای", "آبی"],
     releaseDate: "2025-07-15",
-    price: 88000000
+    price: 88000000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "شیائومی 15 پرو 256 گیگ",
@@ -26,7 +40,14 @@ export const productData = [
     colors: ["مشکی", "طلایی"],
     releaseDate: "2025-06-30",
     price: 42000000,
-    discountedPrice: 38900000
+    discountedPrice: 38900000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "هوآوی P70 Pro 256 گیگ",
@@ -35,7 +56,14 @@ export const productData = [
     category: "پرچمدار",
     colors: ["سبز", "مشکی"],
     releaseDate: "2025-06-10",
-    price: 51000000
+    price: 51000000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "سامسونگ A75 5G 128 گیگ",
@@ -45,7 +73,14 @@ export const productData = [
     colors: ["آبی", "مشکی"],
     releaseDate: "2025-05-25",
     price: 21500000,
-    discountedPrice: 19900000
+    discountedPrice: 19900000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "آیفون SE 2025 128 گیگ",
@@ -54,7 +89,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["قرمز", "سفید", "مشکی"],
     releaseDate: "2025-05-10",
-    price: 33000000
+    price: 33000000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "نوکیا X300 5G 128 گیگ",
@@ -64,7 +106,14 @@ export const productData = [
     colors: ["آبی", "مشکی"],
     releaseDate: "2025-04-18",
     price: 15800000,
-    discountedPrice: 14900000
+    discountedPrice: 14900000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "پوکو F6 Pro 256 گیگ",
@@ -73,7 +122,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["مشکی", "سفید"],
     releaseDate: "2025-04-01",
-    price: 24500000
+    price: 24500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "ویوو X100 Pro 512 گیگ",
@@ -82,7 +138,14 @@ export const productData = [
     category: "پرچمدار",
     colors: ["مشکی", "طلایی"],
     releaseDate: "2025-03-20",
-    price: 49500000
+    price: 49500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "موتورولا Edge 50 Fusion 256 گیگ",
@@ -92,7 +155,14 @@ export const productData = [
     colors: ["سبز", "مشکی"],
     releaseDate: "2025-03-01",
     price: 27500000,
-    discountedPrice: 25900000
+    discountedPrice: 25900000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "اوپو Reno11 Pro 5G",
@@ -101,7 +171,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["سفید", "مشکی"],
     releaseDate: "2025-02-15",
-    price: 36500000
+    price: 36500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "سامسونگ Galaxy M55 5G",
@@ -110,7 +187,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["آبی", "مشکی"],
     releaseDate: "2025-01-20",
-    price: 22500000
+    price: 22500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "شیائومی Redmi Note 14",
@@ -120,7 +204,14 @@ export const productData = [
     colors: ["سبز", "مشکی"],
     releaseDate: "2024-12-25",
     price: 14500000,
-    discountedPrice: 13500000
+    discountedPrice: 13500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "آیفون 15 پرومکس 256 گیگ",
@@ -129,7 +220,14 @@ export const productData = [
     category: "پرچمدار",
     colors: ["نقره‌ای", "طلایی", "مشکی"],
     releaseDate: "2024-11-10",
-    price: 87500000
+    price: 87500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "ریلمی GT Neo6",
@@ -138,7 +236,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["مشکی", "سبز"],
     releaseDate: "2024-10-01",
-    price: 29800000
+    price: 29800000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "نوکیا G500 5G",
@@ -147,7 +252,14 @@ export const productData = [
     category: "اقتصادی",
     colors: ["مشکی", "آبی"],
     releaseDate: "2024-09-15",
-    price: 16500000
+    price: 16500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "گلکسی Z Fold 6",
@@ -157,7 +269,14 @@ export const productData = [
     colors: ["مشکی", "نقره‌ای"],
     releaseDate: "2024-09-01",
     price: 109000000,
-    discountedPrice: 102000000
+    discountedPrice: 102000000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "هوآوی Nova 13 SE",
@@ -166,7 +285,14 @@ export const productData = [
     category: "میان‌رده",
     colors: ["آبی", "صورتی"],
     releaseDate: "2024-08-10",
-    price: 22500000
+    price: 22500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "گلکسی A55 5G",
@@ -176,7 +302,14 @@ export const productData = [
     colors: ["آبی", "مشکی"],
     releaseDate: "2024-07-15",
     price: 19500000,
-    discountedPrice: 18500000
+    discountedPrice: 18500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   },
   {
     name: "شیائومی Poco X6 Pro",
@@ -185,6 +318,13 @@ export const productData = [
     category: "میان‌رده",
     colors: ["مشکی", "نارنجی"],
     releaseDate: "2024-06-30",
-    price: 20500000
+    price: 20500000,
+    description: `
+    <div class="">
+      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
+      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+    </div>
+  `
   }
 ]

@@ -1,38 +1,44 @@
-import {
-  FaRegUser,
-  FaShoppingCart
-} from "react-icons/fa";
+import { FaRegUser, FaShoppingCart } from "react-icons/fa";
 import { LuMoonStar } from "react-icons/lu";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import {
-  IoCloseSharp,
-  IoHomeOutline
-} from "react-icons/io5";
-import {
-  CiUser,
-  CiPhone,
-  CiShoppingBasket
-} from "react-icons/ci";
+import { IoCloseSharp, IoHomeOutline } from "react-icons/io5";
+import { CiUser, CiPhone, CiShoppingBasket } from "react-icons/ci";
 import { useState } from "react";
 import logo from "../../assets/imgs/logo.png";
-
+import { productData } from "../../products";
+import { li } from "framer-motion/client";
 const menuItems = [
   { icon: <LuMoonStar />, label: "حالت شب", to: "" },
   { icon: <CiShoppingBasket />, label: "فروشگاه", to: "" },
   { icon: <IoHomeOutline />, label: "خانه", to: "" },
   { icon: <CiUser />, label: "درباره ما", to: "" },
-  { icon: <CiPhone />, label: "تماس با ما", to: "" }
+  { icon: <CiPhone />, label: "تماس با ما", to: "" },
 ];
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
   const [focusinput, setFocusinput] = useState(false);
-
+  const [search, setSearch] = useState("");
+  const [resSearch, setResSearch] = useState([]);
+  const handlesearch = (value) => {
+  setSearch(value);
+  if (value.trim() === "") {
+    setResSearch([]);
+    return;
+  }
+  const filterSearch = productData.filter(prod =>
+    prod.name.toLowerCase().includes(value.toLowerCase())
+  );
+  setResSearch(filterSearch);
+};
   return (
     <>
-      <header className="bg-khakestar-100 sticky top-0 left-0 right-0 z-50" id="top">
+      <header
+        className="bg-khakestar-100 sticky top-0 left-0 right-0 z-50"
+        id="top"
+      >
         {/* دسکتاپ */}
         <div className="hidden md:block cont !py-3">
           <div className="flex justify-between items-center">
@@ -45,14 +51,31 @@ const Header = () => {
                 type="text"
                 placeholder="جستجوی محصولات "
                 className="outline-0 border-0 w-100"
+                onChange={(e) => handlesearch(e.target.value)}
                 onFocus={() => setFocusinput(true)}
                 onBlur={() => setFocusinput(false)}
               />
+              {resSearch.length > 0 ?
+                <div className="absolute right-0 top-15 bg-khakestar-200 w-full p-3 rounded-md flex flex-col gap-3">
+                  {resSearch.map((prod)=>(
+                  <Link to={`/product/${prod.slug}`}>{prod.name}</Link>
+                ))}
+              </div>
+              : ''}
             </div>
             <div className="flex items-center gap-4">
-              <FaRegUser className="cursor-pointer hover:text-tala transition-colors" size={25} />
-              <FaShoppingCart className="cursor-pointer hover:text-tala transition-colors" size={25} />
-              <LuMoonStar className="cursor-pointer hover:text-tala transition-colors" size={25} />
+              <FaRegUser
+                className="cursor-pointer hover:text-tala transition-colors"
+                size={25}
+              />
+              <FaShoppingCart
+                className="cursor-pointer hover:text-tala transition-colors"
+                size={25}
+              />
+              <LuMoonStar
+                className="cursor-pointer hover:text-tala transition-colors"
+                size={25}
+              />
             </div>
           </div>
           <nav className="flex mt-8">
@@ -90,7 +113,15 @@ const Header = () => {
                 type="text"
                 placeholder="جستجوی محصولات "
                 className="outline-0 border-0 w-100"
+                onChange={(e)=> handlesearch(e.target.value)}
               />
+              {resSearch.length > 0 ?
+                <div className="absolute right-0 top-15 bg-white w-full p-3 rounded-md flex flex-col gap-3">
+                  {resSearch.map((prod)=>(
+                  <Link to={`/product/${prod.slug}`}>{prod.name}</Link>
+                ))}
+              </div>
+              : ''}
             </div>
           </div>
         </div>

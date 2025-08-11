@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { productData } from "../../products";
-import { FaMinus, FaPlus, FaShoppingCart } from "react-icons/fa";
-
+import { FaMinus, FaPlus, FaShoppingCart, FaRegClock } from "react-icons/fa";
+import { FaClockRotateLeft } from "react-icons/fa6";
+import { motion, AnimatePresence } from "framer-motion";
+import { MdVerifiedUser } from "react-icons/md";
+import { AiOutlineTruck } from "react-icons/ai";
 const colorMap = {
   خاکستری: "#888888",
   طلایی: "#FFD700",
@@ -19,20 +22,64 @@ const Product = () => {
   const { slug } = useParams();
   const product = productData.find((p) => p.slug === slug);
   const [nums, setNums] = useState(1);
+  const [activeTab, setActiveTab] = useState("description");
+  const tabs = [
+    { id: "description", label: "توضیحات" },
+    { id: "specs", label: "مشخصات فنی" },
+    { id: "reviews", label: "نظرات" },
+  ];
+  const tabContent = {
+    description: (
+      <div dangerouslySetInnerHTML={{ __html: product.description }} />
+    ),
+    specs: (
+      <div>
+        <h2 className="text-lg font-bold mb-2">مشخصات فنی</h2>
+        <ul className="list-disc pr-5">
+          <li>وزن: 250 گرم</li>
+          <li>رنگ: مشکی</li>
+          <li>جنس: فلز</li>
+        </ul>
+      </div>
+    ),
+    reviews: (
+      <div>
+        <h2 className="text-lg font-bold mb-2">نظرات کاربران</h2>
+        <p>اینجا بخش ثبت و نمایش نظرات کاربران هست.</p>
+      </div>
+    ),
+  };
   return (
     <div className="mt-10">
-      <div className="cont bg-khakestar-100 rounded-md">
-        <div className="flex flex-col lg:flex-row py-5 justify-between">
-          <div className="lg:w-[30%]">
+      <div className="cont bg-khakestar-100 rounded-md !py-7">
+        <div className="flex gap-5 lg:gap-20 flex-col lg:flex-row py-5 justify-between">
+          <div className="lg:w-[20%]">
             <img
               src="/src/assets/imgs/1.jpg"
               alt={product.name}
-              className="lg:w-2/3"
+              className="w-1/2 lg:w-full m-auto"
             />
           </div>
-          <div className="lg:w-[40%]">
+          <div className="lg:w-[50%]">
             <h1 className="font-bold !text-2xl">{product.name}</h1>
             <p>{product.slug}</p>
+            <span className="w-full bg-tala h-[1px] block my-4"></span>
+            <ul className="my-5 flex flex-col gap-2">
+              <li>برند: {product.brand}</li>
+              <li>گارانتی : 24 ماهه</li>
+            </ul>
+            <span className="block my-2 text-xl">ویژگی های محصول:</span>
+            <ul className="flex flex-col gap-2">
+              <li>حافظه داخلی : 128 گیگ</li>
+              <li>اندازه : 6.4 اینچ</li>
+              <li>تعداد سیم کارت : دو سیم کارت</li>
+            </ul>
+            <div className="bg-orange-200 px-4 py-2 rounded-md mt-10">
+              <p className=" flex gap-2 items-center text-red-600 ">
+                <FaClockRotateLeft />
+                حداکثر تا 3 روز تحویل داده میشود
+              </p>
+            </div>
           </div>
           <div className="bg-white lg:w-[30%] p-3 rounded-md">
             <span>رنگ:</span>
@@ -97,6 +144,57 @@ const Product = () => {
               <FaShoppingCart size={25} />
               افزودن به سبدخرید
             </button>
+          </div>
+        </div>
+        <span className="w-full bg-tala h-[1px] block"></span>
+        <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-5 mt-7">
+          <div className="border border-khakestar-200 rounded-md p-3 flex items-center gap-2 flex-1">
+            <FaClockRotateLeft size={20} />
+            <p>هفت روز ضمانت بازگشت کالا</p>
+          </div>
+          <div className="border border-khakestar-200 rounded-md p-3 flex items-center gap-2 flex-1">
+            <MdVerifiedUser size={20} />
+            <p>تضمین اصالت کالا</p>
+          </div>
+          <div className="border border-khakestar-200 rounded-md p-3 flex items-center gap-2 flex-1">
+            <FaRegClock size={20} />
+            <p>هفت روز هفته</p>
+          </div>
+          <div className="border border-khakestar-200 rounded-md p-3 flex items-center gap-2 flex-1">
+            <AiOutlineTruck size={25} />
+            <p>تحویل اکسپرس در تهران, کرج</p>
+          </div>
+        </div>
+      </div>
+      <div className="cont bg-khakestar-100 rounded-md !py-3 !mt-5">
+        <div className="w-full mx-auto mt-6">
+          <div className="flex">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-4 py-2 transition-colors !border-b-2 !outline-0  ${
+                  activeTab === tab.id
+                    ? "!border-b-2 !border-tala !font-bold !text-tala"
+                    : "!text-gray-500 !hover:text-blue-500"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+          <div className="p-4">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeTab}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.3 }}
+              >
+                {tabContent[activeTab]}
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

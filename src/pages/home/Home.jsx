@@ -16,9 +16,7 @@ const Home = () => {
     .slice(0, 8);
     const newblog = blog
     .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate))
-    .slice(0, 6);
-    console.log(newblog);
-    
+    .slice(0, 6);    
   const saleProduct = productData.filter((prod) => prod.discountedPrice);
   return (
     <div className="cont lg:!my-10">
