@@ -189,7 +189,10 @@ const Shop = () => {
                 {Array.from({ length: totalPages }, (_, i) => (
                   <button
                     key={i + 1}
-                    onClick={() => setCurrentPage(i + 1)}
+                    onClick={() => {
+                      setCurrentPage(i + 1);
+                      window.scrollTo({top:0,behavior:'smooth'})
+                    }}
                     className={`px-4 py-2 border border-tala outline-0  rounded`}
                   >
                     {i + 1}
