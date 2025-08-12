@@ -8,7 +8,6 @@ import { CiUser, CiPhone, CiShoppingBasket } from "react-icons/ci";
 import { useState } from "react";
 import logo from "../../assets/imgs/logo.png";
 import { productData } from "../../products";
-import { li } from "framer-motion/client";
 const menuItems = [
   { icon: <LuMoonStar />, label: "حالت شب", to: "" },
   { icon: <CiShoppingBasket />, label: "فروشگاه", to: "" },
@@ -68,10 +67,12 @@ const Header = () => {
                 className="cursor-pointer hover:text-tala transition-colors"
                 size={25}
               />
-              <FaShoppingCart
+              <Link to="/cart">
+                <FaShoppingCart
                 className="cursor-pointer hover:text-tala transition-colors"
                 size={25}
               />
+              </Link>
               <LuMoonStar
                 className="cursor-pointer hover:text-tala transition-colors"
                 size={25}
@@ -104,7 +105,9 @@ const Header = () => {
               />
               <div className="flex items-center gap-4">
                 <FaRegUser size="25px" className="cursor-pointer" />
-                <FaShoppingCart size="25px" className="cursor-pointer" />
+                <Link to='/cart'>
+                  <FaShoppingCart size="25px" className="cursor-pointer" />
+                </Link>
               </div>
             </div>
             <div className="bg-gray-100 relative flex items-center py-3 px-2 rounded-md gap-2">
