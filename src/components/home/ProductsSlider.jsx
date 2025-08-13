@@ -11,10 +11,10 @@ const ProductsSlider = ({ products, comp: Component = null }) => {
     <div className="relative">
       <div className="swiper-buttons z-30">
         <button className="swiper-button-prev-custom absolute top-1/2 right-0 -translate-y-1/2 text-3xl !text-black hover:!text-tala !bg-transparent z-40">
-          <FaRegArrowAltCircleRight size={40} />
+          <FaRegArrowAltCircleRight size={30} />
         </button>
         <button className="swiper-button-next-custom absolute top-1/2 left-0 -translate-y-1/2 text-3xl !text-black hover:!text-tala  !bg-transparent z-40">
-          <FaRegArrowAltCircleLeft size={40} />
+          <FaRegArrowAltCircleLeft size={30} />
         </button>
       </div>
       <Swiper

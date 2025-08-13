@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 const ProductTitleSection = ({title,link}) => {
   return (
     <div className="flex justify-between items-center mb-8">
-      <span className="text-xl relative font-semibold before:absolute before:-right-2 before:top-0 before:h-full before:bg-tala before:w-1">
+      <span className="text-xl relative font-semibold before:absolute before:-right-2 before:top-0 before:h-full before:bg-tala before:w-1 dark:text-khakestar-300">
         {title}
       </span>
       <Link className="flex items-center gap-2 text-lg" to={link} >

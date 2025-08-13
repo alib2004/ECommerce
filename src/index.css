@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
 @theme {
   --color-sefid: #fafafa;
   /* پس زمینه سایت */
@@ -29,8 +31,11 @@ body{
   background-color: #FAFAFA;
   font-family: 'Vazir';
   font-display: swap;
+  transition: all 1s;
 }
-
+html {
+  transition: background-color 0.5s, color 0.5s !important;
+}
 .cont{
     width: 100%;
     max-width: 1360px;

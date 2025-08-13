@@ -1,4 +1,3 @@
-import React from "react";
 import gif1 from "../../assets/imgs/v1.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
