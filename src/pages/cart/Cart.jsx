@@ -30,21 +30,21 @@ const Cart = () => {
   }
   if (cart.length === 0) {
   return (
-        <div className="cont bg-khakestar-100 lg:rounded-3xl">
-      <div className="py-5 mt-10">
-        <h1 className="!text-xl font-bold mb-4 text-tala !text-center">سبد خرید خالی است</h1>
+        <div className="cont bg-khakestar-100 lg:rounded-3xl dark:bg-gray-500 rounded-md">
+      <div className="py-5 my-10">
+        <h1 className="!text-xl font-bold text-tala !text-center">سبد خرید خالی است</h1>
         </div>
         </div>
   )
 }
   return (
-    <div className="cont bg-khakestar-100 rounded-3xl">
+    <div className="cont bg-khakestar-100 rounded-3xl dark:bg-gray-500">
       <div className="py-5 mt-10">
         <h1 className="!text-xl font-bold mb-4 text-tala">سبد خرید</h1>
         {cart.length > 0 && (
           <><table className="w-full">
             <thead className="border-b-8 border-transparent">
-              <tr className="border-b !text-xs lg:!text-lg">
+              <tr className="border-b !text-xs lg:!text-lg dark:text-khakestar-200">
                 <th>تصویر</th>
                 <th>نام محصول</th>
                 <th>رنگ محصول</th>
@@ -56,7 +56,7 @@ const Cart = () => {
             </thead>
             <tbody>
               {cart.map((item) => (
-                <tr key={`${item.id} - ${item.color}`} className=" text-center border-b-[20px] border-transparent !text-xs lg:!text-lg">
+                <tr key={`${item.id} - ${item.color}`} className=" text-center border-b-[20px] border-transparent !text-xs lg:!text-lg dark:text-khakestar-200">
                   <td>
                     <img src="/src/assets/imgs/1.png" alt={item.name} className="m-auto rounded-md w-14 lg:w-[100px]" />
                   </td>
@@ -78,12 +78,12 @@ const Cart = () => {
                   </td>
                   <td>{(item.price * item.quantity).toLocaleString()}</td>
                   <td>
-                    <button onClick={() => handleDelProduct(item.id, item.color)}>حذف</button>
+                    <button className="!bg-transparent" onClick={() => handleDelProduct(item.id, item.color)}>حذف</button>
                   </td>
                 </tr>
               ))}
             </tbody>
-          </table><span>مبلغ کل :  {totalprice.toLocaleString()} تومن
+          </table><span className="dark:text-tala">مبلغ کل :  {totalprice.toLocaleString()} تومن
             </span></>
         )}
         

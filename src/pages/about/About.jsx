@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="cont bg-khakestar-100 rounded-3xl">
+    <div className="cont bg-khakestar-100 rounded-3xl dark:bg-gray-500 ">
       <div className="p-5 mt-10">
-        <h1 className="font-bold !text-3xl">درباره ما</h1>
-        <p className="my-3 block leading-10 text-khakestar-300">
+        <h1 className="font-bold !text-3xl dark:text-tala">درباره ما</h1>
+        <p className="my-3 block leading-10 text-khakestar-300  dark:text-tala">
           من در حال طراحی رابط کاربری یک فروشگاه آنلاین موبایل هستم که با
           استفاده از React و Tailwind CSS توسعه داده‌ام. هدفم اینه که تجربه‌ای
           سریع، زیبا و کاربرپسند برای بازدیدکننده‌ها فراهم کنم؛ جوری که بتونن

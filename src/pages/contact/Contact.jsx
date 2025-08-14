@@ -2,10 +2,10 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='cont bg-khakestar-100 rounded-3xl'>
+        <div className='cont bg-khakestar-100 dark:bg-gray-500 rounded-3xl'>
             <div className='p-5 mt-10'>
-                <h1 className='font-bold !text-3xl'>تماس با ما</h1>
-                <span className='my-3 block'>قبل از مطرح کردن سوال، بخش سوالات متداول را مطاله نمایید.</span>
+                <h1 className='font-bold !text-3xl dark:text-tala'>تماس با ما</h1>
+                <span className='my-3 block dark:text-tala'>قبل از مطرح کردن سوال، بخش سوالات متداول را مطاله نمایید.</span>
                 <div className='flex flex-col lg:flex-row gap-10 justify-between items-start'>
                     <form className='flex flex-col gap-4 mt-3 w-full lg:w-[70%]'>
                         <div className='flex flex-col lg:flex-row gap-2'>

@@ -70,10 +70,6 @@ const Header = () => {
               )}
             </div>
             <div className="flex items-center gap-4 dark:text-khakestar-200">
-              <FaRegUser
-                className="cursor-pointer hover:text-tala transition-colors"
-                size={25}
-              />
               <Link to="/cart" className="dark:!text-khakestar-200">
                 <FaShoppingCart
                   className="cursor-pointer hover:text-tala transition-colors"
@@ -128,7 +124,6 @@ const Header = () => {
                 alt="لوگو"
               />
               <div className="flex items-center gap-4">
-                <FaRegUser size="25px" className="cursor-pointer" />
                 <Link to="/cart">
                   <FaShoppingCart
                     size="25px"

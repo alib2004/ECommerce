@@ -43,10 +43,10 @@ const Shop = () => {
     <div className=" mt-10">
       <div className="cont p-5">
         <div className="flex flex-col lg:flex-row gap-5 items-start">
-          <div className="w-full lg:w-[25%] bg-khakestar-100 p-4 rounded-lg shadow">
+          <div className="w-full lg:w-[25%] bg-khakestar-100 p-4 rounded-lg dark:bg-gray-500 shadow">
             <h2 className="text-lg font-bold mb-4 text-tala">فیلتر محصولات</h2>
             <div className="mb-3">
-              <label className="block mb-1">برند:</label>
+              <label className="block mb-1  dark:text-tala">برند:</label>
               <select
                 value={selectedBrand}
                 onChange={(e) => {
@@ -65,7 +65,7 @@ const Shop = () => {
             </div>
 
             <div className="mb-3">
-              <label className="block mb-1">دسته‌بندی:</label>
+              <label className="block mb-1 dark:text-tala">دسته‌بندی:</label>
               <select
                 value={selectedCategory}
                 onChange={(e) => {
@@ -134,7 +134,7 @@ const Shop = () => {
                 currentProducts.map((product, index) => (
                   <div
                     key={index}
-                    className="border p-4 rounded-lg shadow hover:shadow-lg transition relative"
+                    className="border p-4 rounded-lg shadow hover:shadow-lg transition relative  dark:bg-gray-500"
                   >
                     <img
                       src="/src/assets/imgs/1.png"
@@ -145,7 +145,7 @@ const Shop = () => {
                       {product.colors?.map((color, i) => (
                         <span
                           key={i}
-                          className="w-3 h-3 rounded-full border-0"
+                          className="w-3 h-3 rounded-full border-0 "
                           style={{
                             backgroundColor: colorMap[color] || "#ccc",
                             border: "1px solid",
@@ -154,24 +154,26 @@ const Shop = () => {
                         ></span>
                       ))}
                     </div>
-                    <h3 className="font-bold mt-5 text-lg mb-2 truncate">
-                      <Link to={`/product/${product.slug}`}>
+                    <h3 className="font-bold mt-5 text-lg mb-2 truncate ">
+                      <Link to={`/product/${product.slug}`} className="dark:!text-gray-200">
                         {product.name}
                       </Link>
                     </h3>
                     {product.discountedPrice ? (
                       <div className="flex flex-col gap-2 items-end font-bold">
-                        <p className="relative before:absolute before:top-1/2  before:right-0 before:bg-tala before:w-full before:h-0.5 before:-rotate-12">
+                        <p className="relative before:absolute before:top-1/2  before:right-0 before:bg-tala before:w-full before:h-0.5 before:-rotate-12 dark:!text-gray-200">
                           {Number(product.price).toLocaleString()}{" "}
                           <span className="text-tala">تومن</span>
                         </p>
                         <p>
-                          {Number(product.discountedPrice).toLocaleString()}{" "}
+                          <span className="dark:!text-gray-200">
+                            {Number(product.discountedPrice).toLocaleString()}{" "}
+                          </span>
                           <span className="text-tala">تومن</span>
                         </p>
                       </div>
                     ) : (
-                      <p className="font-bold flex gap-2 justify-end">
+                      <p className="font-bold flex gap-2 justify-end dark:!text-gray-200">
                         {Number(product.price).toLocaleString()}{" "}
                         <span className="text-tala">تومن</span>
                       </p>

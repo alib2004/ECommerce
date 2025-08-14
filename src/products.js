@@ -10,9 +10,9 @@ export const productData = [
     discountedPrice: 89900000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -26,9 +26,9 @@ export const productData = [
     price: 88000000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -43,9 +43,9 @@ export const productData = [
     discountedPrice: 38900000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -59,9 +59,9 @@ export const productData = [
     price: 51000000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -76,9 +76,9 @@ export const productData = [
     discountedPrice: 19900000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -92,9 +92,9 @@ export const productData = [
     price: 33000000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -109,9 +109,9 @@ export const productData = [
     discountedPrice: 14900000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -125,9 +125,9 @@ export const productData = [
     price: 24500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -141,9 +141,9 @@ export const productData = [
     price: 49500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -158,9 +158,9 @@ export const productData = [
     discountedPrice: 25900000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -174,9 +174,9 @@ export const productData = [
     price: 36500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -190,9 +190,9 @@ export const productData = [
     price: 22500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -207,9 +207,9 @@ export const productData = [
     discountedPrice: 13500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -223,9 +223,9 @@ export const productData = [
     price: 87500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -239,9 +239,9 @@ export const productData = [
     price: 29800000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -255,9 +255,9 @@ export const productData = [
     price: 16500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -272,9 +272,9 @@ export const productData = [
     discountedPrice: 102000000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -288,9 +288,9 @@ export const productData = [
     price: 22500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -305,9 +305,9 @@ export const productData = [
     discountedPrice: 18500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   },
@@ -321,9 +321,9 @@ export const productData = [
     price: 20500000,
     description: `
     <div class="">
-      <p>آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
-      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" />
-      <p>دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
+      <p class="my-2 dark:text-tala">آیفون 16 پرو مکس با طراحی شیک و قابلیت‌های فوق‌العاده عرضه شده است.</p>
+      <img src="/src/assets/imgs/1.png" alt="آیفون 16 پرو مکس" class="rounded-md"/>
+      <p class="my-2 dark:text-tala">دارای پردازنده قدرتمند، دوربین پیشرفته و باتری با دوام بالا.</p>
     </div>
   `
   }

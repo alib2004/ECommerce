@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { productData } from "../../products";
@@ -36,8 +37,8 @@ const Product = () => {
     ),
     specs: (
       <div>
-        <h2 className="text-lg font-bold mb-2">مشخصات فنی</h2>
-        <ul className="list-disc pr-5">
+        <h2 className="text-lg font-bold mb-2 dark:text-tala">مشخصات فنی</h2>
+        <ul className="list-disc pr-5 dark:text-khakestar-200">
           <li>وزن: 250 گرم</li>
           <li>رنگ: مشکی</li>
           <li>جنس: فلز</li>
@@ -46,8 +47,8 @@ const Product = () => {
     ),
     reviews: (
       <div>
-        <h2 className="text-lg font-bold mb-2">نظرات کاربران</h2>
-        <p>اینجا بخش ثبت و نمایش نظرات کاربران هست.</p>
+        <h2 className="text-lg font-bold mb-2 dark:text-tala">نظرات کاربران</h2>
+        <p className=" dark:text-khakestar-200">اینجا بخش ثبت و نمایش نظرات کاربران هست.</p>
       </div>
     ),
   };
@@ -94,18 +95,18 @@ const Product = () => {
   };
   return (
     <div className="mt-10">
-      <div className="cont bg-khakestar-100 rounded-md !py-7">
+      <div className="cont bg-khakestar-100 rounded-md !py-7 dark:bg-gray-500">
         <ToastContainer />
         <div className="flex gap-5 lg:gap-20 flex-col lg:flex-row py-5 justify-between">
           <div className="lg:w-[20%]">
             <img
               src="/src/assets/imgs/1.jpg"
               alt={product.name}
-              className="w-1/2 lg:w-full m-auto"
+              className="w-1/2 lg:w-full m-auto rounded-md"
             />
           </div>
           <div className="lg:w-[50%]">
-            <h1 className="font-bold !text-2xl">{product.name}</h1>
+            <h1 className="font-bold !text-2xl dark:text-tala">{product.name}</h1>
             <p>{product.slug}</p>
             <span className="w-full bg-tala h-[1px] block my-4"></span>
             <ul className="my-5 flex flex-col gap-2">
@@ -125,7 +126,7 @@ const Product = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white lg:w-[30%] p-3 rounded-md">
+          <div className="bg-white lg:w-[30%] p-3 rounded-md dark:bg-gray-400">
             <span>رنگ:</span>
             {product.colors.map((color) => (
               <button
@@ -218,17 +219,17 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="cont bg-khakestar-100 rounded-md !py-3 !mt-5">
+      <div className="cont bg-khakestar-100 dark:bg-gray-500 rounded-md !py-3 !mt-5">
         <div className="w-full mx-auto mt-6">
-          <div className="flex">
+          <div className="flex gap-3">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 transition-colors !border-b-2 !outline-0  ${
+                className={`px-4 py-2 transition-colors !border-b-2 !outline-0 dark:!bg-tala  ${
                   activeTab === tab.id
-                    ? "!border-b-2 !border-tala !font-bold !text-tala"
-                    : "!text-gray-500 !hover:text-blue-500"
+                    ? "!border-b-2 !border-tala !font-bold !text-tala dark:!text-white"
+                    : "!text-gray-500 !hover:text-blue-500 "
                 }`}
               >
                 {tab.label}
