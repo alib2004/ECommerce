@@ -67,7 +67,7 @@ const Cart = () => {
                   >
                     <td>
                       <LazyLoadImage
-                        src="/src/assets/imgs/1.png"
+                        src="/imgs/1.png"
                         alt={item.name}
                         effect="blur"
                         className="m-auto rounded-md w-14 lg:w-[100px]"

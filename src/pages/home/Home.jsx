@@ -1,4 +1,3 @@
-import gif1 from "../../assets/imgs/v1.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { productData } from "../../products";
@@ -22,7 +21,7 @@ const Home = () => {
   return (
     <div className="cont lg:!my-10">
       <LazyLoadImage
-        src={gif1}
+        src="/imgs/v1.gif"
         effect="blur"
         className="rounded-lg hidden md:block"
       />
@@ -31,7 +30,7 @@ const Home = () => {
           <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
             <SwiperSlide>
               <img
-                src="/src/assets/imgs/slider-1.jpg"
+                src="/imgs/slider-1.jpg"
                 alt="Slide 1"
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -54,12 +53,12 @@ const Home = () => {
         </div>
         <div className="flex lg:flex-col w-full lg:w-[30%] gap-1 lg:h-[455px] justify-between">
           <LazyLoadImage
-            src="/src/assets/imgs/banner-md-2.jpg"
+            src="/imgs/banner-md-2.jpg"
             effect="blur"
             className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
           />
           <LazyLoadImage
-            src="/src/assets/imgs/banner-md-03.gif"
+            src="/imgs/banner-md-03.gif"
             effect="blur"
             className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
           />
@@ -68,14 +67,14 @@ const Home = () => {
       <ProductTitleSection title={"پیشنهادات ویژه"} link={"/shop"} />
       <ProductsSlider products={saleProduct} comp={SaleProduct} />
       <LazyLoadImage
-        src="/src/assets/imgs/2-apple16promax.jpg"
+        src="/imgs/2-apple16promax.jpg"
         effect="blur"
         className="rounded-md mb-10"
       />
       <ProductTitleSection title={"جدیدترین محصولات"} link={"/shop"} />
       <ProductsSlider products={newProduct} comp={Product} />
       <LazyLoadImage
-        src="/src/assets/imgs/5-apple14promax.jpg"
+        src="/imgs/5-apple14promax.jpg"
         effect="blur"
         className="rounded-md mb-10"
       />

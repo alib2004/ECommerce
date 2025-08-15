@@ -5,7 +5,7 @@ const Product = ({product}) => {
   return (
     <div className="card border border-tala rounded-md dark:bg-gray-500 flex flex-col gap-4 overflow-hidden p-5">
       <LazyLoadImage
-        src="/src/assets/imgs/1.png"
+        src="/imgs/1.png"
         effect="blur"
         className="rounded-md"
       />

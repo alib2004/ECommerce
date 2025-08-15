@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CiUser, CiPhone, CiShoppingBasket,IoCloseSharp, IoHomeOutline,RxHamburgerMenu,HiMagnifyingGlass,LuMoonStar, LuSun, FaShoppingCart } from "../../icons.js";
 import { useEffect, useState } from "react";
-import logo from "../../assets/imgs/logo.png";
+import logo from "/imgs/logo.png";
 import { productData } from "../../products";
 const menuItems = [
   { icon: <CiShoppingBasket />, label: "فروشگاه", to: "/shop" },

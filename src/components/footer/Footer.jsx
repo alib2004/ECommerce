@@ -1,6 +1,5 @@
 import { FaAngleUp, FaInstagram, FaTelegram, SiAparat } from "../../icons.js";
 import { Link } from "react-router-dom";
-import enamad from "../../assets/imgs/enamad.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 const Footer = () => {
@@ -108,7 +107,7 @@ const Footer = () => {
               {[1, 2].map((_, i) => (
                 <LazyLoadImage
                   key={i}
-                  src={enamad}
+                  src="/imgs/enamad.png"
                   effect="blur"
                   className="w-full object-contain"
                 />
