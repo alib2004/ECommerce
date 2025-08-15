@@ -139,7 +139,7 @@ const Shop = () => {
                     className="border p-4 rounded-lg shadow hover:shadow-lg transition relative  dark:bg-gray-500"
                   >
                     <LazyLoadImage
-                      src="/src/assets/imgs/1.png"
+                      src="/imgs/1.png"
                       effect="blur"
                       className="w-full rounded-md"
                     />
