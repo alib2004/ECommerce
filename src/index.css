@@ -114,3 +114,6 @@ button:focus-visible {
 .Toastify__toast{
   font-family: 'Vazir';
 }
+.lazy-load-image-background{
+  width: 100% !important;
+}

@@ -9,19 +9,25 @@ import SaleProduct from "../../components/home/SaleProduct";
 import BlogSlider from "../../components/home/BlogSlider";
 import { blog } from "../../blog";
 import Blog from "../../components/home/Blog";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Home = () => {
   const newProduct = productData
     .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate))
     .slice(0, 8);
-    const newblog = blog
+  const newblog = blog
     .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate))
-    .slice(0, 6);    
+    .slice(0, 6);
   const saleProduct = productData.filter((prod) => prod.discountedPrice);
   return (
     <div className="cont lg:!my-10">
-      <img src={gif1} className="rounded-lg hidden md:block" />
-      <div className="mb-10 lg:mb-0 flex flex-col lg:flex-row gap-5 items-center ">
-        <div className="lg:w-[70%] w-full mx-auto mt-10 lg:h-[500px]">
+      <LazyLoadImage
+        src={gif1}
+        effect="blur"
+        className="rounded-lg hidden md:block"
+      />
+      <div className="mb-10 mt-10 lg:mb-0 flex flex-col lg:flex-row gap-5">
+        <div className="lg:w-[70%] w-full mx-auto lg:h-[500px]">
           <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
             <SwiperSlide>
               <img
@@ -46,24 +52,34 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="flex lg:flex-col w-full lg:w-[30%] gap-1 lg:gap-5 lg:h-[455px] justify-between">
-          <img
+        <div className="flex lg:flex-col w-full lg:w-[30%] gap-1 lg:h-[455px] justify-between">
+          <LazyLoadImage
             src="/src/assets/imgs/banner-md-2.jpg"
-            className="lg:h-full lg:w-full w-[49%] lg:object-cover rounded-xl"
+            effect="blur"
+            className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
           />
-          <img
+          <LazyLoadImage
             src="/src/assets/imgs/banner-md-03.gif"
-            className="lg:h-full lg:w-full w-[49%] object-cover rounded-xl"
+            effect="blur"
+            className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
           />
         </div>
       </div>
-      <ProductTitleSection title={"پیشنهادات ویژه"} link={'/shop'} />
+      <ProductTitleSection title={"پیشنهادات ویژه"} link={"/shop"} />
       <ProductsSlider products={saleProduct} comp={SaleProduct} />
-      <img src="/src/assets/imgs/2-apple16promax.jpg" className="rounded-md mb-10" />
-      <ProductTitleSection title={"جدیدترین محصولات"} link={'/shop'} />
+      <LazyLoadImage
+        src="/src/assets/imgs/2-apple16promax.jpg"
+        effect="blur"
+        className="rounded-md mb-10"
+      />
+      <ProductTitleSection title={"جدیدترین محصولات"} link={"/shop"} />
       <ProductsSlider products={newProduct} comp={Product} />
-      <img src="/src/assets/imgs/5-apple14promax.jpg" className="rounded-md mb-10" />
-      <ProductTitleSection title={"جدیدترین مقالات"} link={'/blog'}/>
+      <LazyLoadImage
+        src="/src/assets/imgs/5-apple14promax.jpg"
+        effect="blur"
+        className="rounded-md mb-10"
+      />
+      <ProductTitleSection title={"جدیدترین مقالات"} link={"/blog"} />
       <BlogSlider article={newblog} comp={Blog} />
     </div>
   );

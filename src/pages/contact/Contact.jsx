@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contact = () => {
     return (
         <div className='cont bg-khakestar-100 dark:bg-gray-500 rounded-3xl'>

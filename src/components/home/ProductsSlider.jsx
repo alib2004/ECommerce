@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import {
   FaRegArrowAltCircleLeft,
   FaRegArrowAltCircleRight,
-} from "react-icons/fa";
+} from "../../icons.js";
 const ProductsSlider = ({ products, comp: Component = null }) => {
   return (
     <div className="relative">

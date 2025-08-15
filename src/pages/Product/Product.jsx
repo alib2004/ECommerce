@@ -1,12 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { productData } from "../../products";
-import { FaMinus, FaPlus, FaShoppingCart, FaRegClock } from "react-icons/fa";
-import { FaClockRotateLeft } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
-import { MdVerifiedUser } from "react-icons/md";
-import { AiOutlineTruck } from "react-icons/ai";
+import {AiOutlineTruck,MdVerifiedUser,FaClockRotateLeft,FaMinus, FaPlus, FaShoppingCart, FaRegClock} from '../../icons.js'
 import { ToastContainer, toast, Bounce } from "react-toastify";
 const colorMap = {
   خاکستری: "#888888",

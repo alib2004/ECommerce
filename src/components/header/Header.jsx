@@ -1,10 +1,5 @@
-import { FaRegUser, FaShoppingCart } from "react-icons/fa";
-import { LuMoonStar, LuSun } from "react-icons/lu";
-import { HiMagnifyingGlass } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoCloseSharp, IoHomeOutline } from "react-icons/io5";
-import { CiUser, CiPhone, CiShoppingBasket } from "react-icons/ci";
+import { CiUser, CiPhone, CiShoppingBasket,IoCloseSharp, IoHomeOutline,RxHamburgerMenu,HiMagnifyingGlass,LuMoonStar, LuSun, FaShoppingCart } from "../../icons.js";
 import { useEffect, useState } from "react";
 import logo from "../../assets/imgs/logo.png";
 import { productData } from "../../products";

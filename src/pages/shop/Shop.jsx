@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { productData } from "../../products";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const colorMap = {
   خاکستری: "#888888",
   طلایی: "#FFD700",
@@ -136,9 +138,9 @@ const Shop = () => {
                     key={index}
                     className="border p-4 rounded-lg shadow hover:shadow-lg transition relative  dark:bg-gray-500"
                   >
-                    <img
+                    <LazyLoadImage
                       src="/src/assets/imgs/1.png"
-                      alt=""
+                      effect="blur"
                       className="w-full rounded-md"
                     />
                     <div className="absolute top-6 left-6 flex flex-col gap-1">

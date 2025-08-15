@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const SaleProduct = ({product}) => {
     return (
         <div className="card border border-tala rounded-md   p-5 flex flex-col gap-4 dark:bg-gray-500">
-      <img src="/src/assets/imgs/1.png" className="rounded-md"/>
+          <LazyLoadImage
+        src="/src/assets/imgs/1.png"
+        effect="blur"
+        className="rounded-md"
+      />
       <Link to={`/product/${product.slug}`} className="!font-bold text-sm truncate dark:!text-khakestar-200">{product.name}</Link>
       <div className="w-full h-[1px] bg-tala"></div>
       <div className="flex justify-between items-start">

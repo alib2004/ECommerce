@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "../../icons.js";
 const ProductTitleSection = ({title,link}) => {
   return (
     <div className="flex justify-between items-center mb-8">
