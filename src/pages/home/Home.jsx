@@ -25,7 +25,7 @@ const Home = () => {
         effect="blur"
         className="rounded-lg hidden md:block"
       />
-      <div className="mb-10 mt-10 lg:mb-0 flex flex-col lg:flex-row gap-5">
+      <div className="mb-10 lg:mt-10 lg:mb-0 flex flex-col lg:flex-row gap-5">
         <div className="lg:w-[70%] w-full mx-auto lg:h-[500px]">
           <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
             <SwiperSlide>
@@ -55,12 +55,12 @@ const Home = () => {
           <LazyLoadImage
             src="/imgs/banner-md-2.jpg"
             effect="blur"
-            className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
+            className="lg:h-[220px] w-full object-cover rounded-xl"
           />
           <LazyLoadImage
             src="/imgs/banner-md-03.gif"
             effect="blur"
-            className="lg:h-[220px] lg:w-full w-[49%] object-cover rounded-xl"
+            className="lg:h-[220px] w-full object-cover rounded-xl"
           />
         </div>
       </div>
